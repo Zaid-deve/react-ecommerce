@@ -1,0 +1,13 @@
+.search-bar {
+    height: 70px;
+    border-radius: 150px;
+}
+
+.search-bar .search-inp {
+    border-radius: 150px 0 0 150px;
+
+}
+
+.search-bar .btn {
+    border-radius: 0 150px 150px 0;
+}

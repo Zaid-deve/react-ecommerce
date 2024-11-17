@@ -1,0 +1,150 @@
+/****************************** root vars ******************************/
+
+:root {
+  /* -------------- Color Schems ---------------------  */
+  --primary-color: #243642;
+  /* Tomato Red */
+  --secondary-color: #387478;
+  /* Gold */
+  --accent-color: #629584;
+  /* Lime Green */
+  --background-color: #E2F1E7;
+  /* Alice Blue */
+  --text-color: #2F4F4F;
+  /* Dark Slate Gray */
+  --dark-color: #1A1A1D;
+  /* Dark Color */
+
+
+  /* -------------- Font Sizes --------------------- */
+  --font-base: 1rem;
+  /* Base font size (16px) */
+  --font-heading-1: 2.5rem;
+  /* H1 (40px) */
+  --font-heading-2: 2rem;
+  /* H2 (32px) */
+  --font-heading-3: 1.75rem;
+  /* H3 (28px) */
+  --font-heading-4: 1.5rem;
+  /* H4 (24px) */
+  --font-heading-5: 1.25rem;
+  /* H5 (20px) */
+  --font-heading-6: 1rem;
+  /* H6 (16px) */
+  --font-body: 1rem;
+  /* Body text (16px) */
+  --font-button: 1.2rem;
+  /* Button text (18px) */
+  --font-small: 0.875rem;
+  /* Small text (14px) */
+
+  /* -------------- Font Famylies --------------------- */
+  --font-family-body: 'Inter', sans-serif;
+  --font-family-buttons: 'Poppins', sans-serif;
+  /* --font-family-logo: 'Lobster', cursive; */
+  --font-family-logo: "Anton SC", sans-serif;
+
+}
+
+/****************************** default styles ******************************/
+
+body {
+  overflow: auto;
+  scroll-behavior: smooth;
+  background-color: var(--background-color);
+  font-family: var(--font-family-body);
+}
+
+* {
+  color: var(--primary-color);
+  font-size: var(--font-body);
+}
+
+h1 {
+  font-size: var(--font-heading-1);
+}
+
+h2 {
+  font-size: var(--font-heading-2);
+}
+
+h3 {
+  font-size: var(--font-heading-3);
+}
+
+h4 {
+  font-size: var(--font-heading-4);
+}
+
+h5 {
+  font-size: var(--font-heading-5);
+}
+
+h6 {
+  font-size: var(--font-heading-6);
+}
+
+small {
+  font-size: var(--font-small);
+}
+
+a {
+  text-decoration: none;
+  color: var(--text-color);
+}
+
+/****************************** override styles ******************************/
+
+.btn {
+  font-size: var(--font-button);
+  font-family: var(--font-family-buttons);
+  font-weight: 600;
+  height: 45px;
+}
+
+.btn i {
+  font-size: var(--font-button);
+}
+
+.btn.has-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  width: fit-content;
+}
+
+.btn.btn-dark * {
+  color: var(--background-color);
+}
+
+.form-control {
+  box-shadow: none !important;
+}
+
+.text-primary {
+  color: var(--primary-color);
+}
+
+.text-secondary {
+  color: var(--secondary-color);
+}
+
+.text-dark {
+  color: var(--dark-color);
+}
+
+/****************************** custom styles ******************************/
+
+.flex-center {
+  justify-content: center;
+  align-items: center;
+}
+
+.shadow-custom {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1), 0 2px 20px rgba(0, 0, 0, 0.05);
+}
+
+.logo {
+  font-family: var(--font-family-logo);
+}
